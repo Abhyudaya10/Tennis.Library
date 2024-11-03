@@ -1,0 +1,562 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSJ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/log.png" />
+    <link rel="stylesheet" type="text/css" href="styleicon.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Merriweather&family=Raleway&family=Oswald&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <!-- Navbar Container -->
+    <div class="content">
+      <nav class="navbar" id="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="main.html"><img src="images/log.png" alt="error" /></a>
+        </div>
+        <!-- Navbar Links -->
+        <ul class="navbar-links">
+          <li class="history-link"><a href="history.html">History</a></li>
+
+          <li class="players-link"><a href="icons.html">Icons</a></li>
+          <li class="cno-link"><a href="cupno.html">Grand Slams</a></li>
+          <li class="contact-link"><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-heading">
+        <h1 class="hero-heading">The Tennis Street Journal</h1>
+      </div>
+    </div>
+    <script>
+      // Array of fonts to switch between
+      const fonts = [
+        "Arial, sans-serif",
+        "Courier New, monospace",
+        "Georgia, serif",
+        "Times New Roman, serif",
+        "Verdana, sans-serif",
+        "Trebuchet MS, sans-serif",
+        "Comic Sans MS, cursive",
+        "Impact, sans-serif",
+        "Lucida Console, monospace",
+        "Palatino Linotype, serif",
+        "Tahoma, sans-serif",
+        "Segoe UI, sans-serif",
+        "Arial Black, sans-serif",
+        "Garamond, serif",
+        "Helvetica, sans-serif",
+        "Futura, sans-serif",
+        "Playfair Display, serif", // Elegant serif
+        "Roboto, sans-serif", // Google Font
+        "Open Sans, sans-serif", // Google Font
+        "Lato, sans-serif", // Google Font
+        "Montserrat, sans-serif", // Google Font
+        "Merriweather, serif", // Google Font
+        "Raleway, sans-serif", // Google Font
+        "Oswald, sans-serif", // Google Font
+        "Poppins, sans-serif", // Google Font
+        "Source Sans Pro, sans-serif", // Google Font
+        "Nunito, sans-serif", // Google Font
+        "Quicksand, sans-serif", // Google Font
+        "Zilla Slab, serif", // Google Font
+        "Roboto Slab, serif", // Google Font
+        "Work Sans, sans-serif", // Google Font
+        "Cardo, serif", // Google Font
+        "Pacifico, cursive", // Google Font
+        "Cinzel, serif", // Google Font
+        "Amatic SC, cursive", // Google Font
+        "Alfa Slab One, serif", // Google Font
+        "Anton, sans-serif", // Google Font
+        "Fjalla One, sans-serif", // Google Font
+        "Karla, sans-serif", // Google Font
+        "Varela Round, sans-serif", // Google Font
+        "Roboto Mono, monospace", // Monospace font
+        "Italiana, serif", // Elegant italic font
+        "Libre Baskerville, serif", // Classic serif with italic option
+        "Raleway Dots, cursive", // Fun dotted font
+        "Sacramento, cursive", // Elegant script font
+      ];
+
+      // Select the element
+      const fontSwitcherElement = document.querySelector(".hero-heading");
+
+      // Initialize a counter
+      let currentFontIndex = 0;
+
+      // Function to switch fonts
+      function switchFont() {
+        // Update the font-family of the element
+        fontSwitcherElement.style.fontFamily = fonts[currentFontIndex];
+
+        // Randomly decide to italicize or not
+        const isItalic = Math.random() < 0.5; // 50% chance to italicize
+        fontSwitcherElement.style.fontStyle = isItalic ? "italic" : "normal";
+
+        // Update the index to the next font
+        currentFontIndex = (currentFontIndex + 1) % fonts.length; // Loop back to the start
+      }
+
+      // Set the interval to switch fonts every second (1000 milliseconds)
+      setInterval(switchFont, 110);
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="iconscon">
+      <p class="leadpar">
+        Tennis has produced many iconic players whose skill and charisma have
+        left a lasting impact on the sport. Legends like Billie Jean King, Rod
+        Laver, and Bjorn Borg paved the way for modern tennis with
+        groundbreaking achievements and memorable rivalries. Later, stars like
+        Martina Navratilova, Serena Williams, and Roger Federer elevated the
+        game, setting records and inspiring fans with their dominance and
+        dedication. Each of these players, along with current icons like Rafael
+        Nadal and Novak Djokovic, has not only advanced the level of play but
+        also contributed to tennis's global popularity and cultural influence.
+      </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="big4">
+      <h1 class="big4h">The Big <sub>4</sub></h1>
+      <p class="big4p">
+        The "Big Four" of tennis—Roger Federer, Rafael Nadal, Novak Djokovic,
+        and Andy Murray—dominated men’s tennis for over a decade, redefining the
+        sport with their remarkable skill, endurance, and rivalry. Each brought
+        a unique style: Federer’s elegance and precision, Nadal’s relentless
+        power and clay-court mastery, Djokovic’s incredible flexibility and
+        mental toughness, and Murray’s tactical brilliance. Together, they have
+        won numerous Grand Slam titles and captivated fans worldwide, pushing
+        each other to new heights and creating some of the most memorable
+        matches in tennis history. Their era has left an indelible mark on the
+        sport.
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="roger">
+        <h1 class="rogerh"><u>Federer</u></h1>
+        <p class="rogerp">
+          Roger Federer, widely regarded as one of the greatest tennis players
+          of all time, is celebrated for his elegance on the court, remarkable
+          shot-making ability, and unmatched consistency. Known for his smooth,
+          effortless style and exceptional technique, Federer dominated men’s
+          tennis for years, setting records with his 20 Grand Slam titles, a
+          milestone he held for the better part of two decades. His rivalry with
+          players like Rafael Nadal and Novak Djokovic defined an era, producing
+          thrilling matches that captivated fans worldwide. Beyond titles, his
+          longevity and adaptability allowed him to compete at the highest level
+          well into his late 30s, a rare feat in the sport. Off the court,
+          Federer is respected for his sportsmanship, humility, and dedication
+          to philanthropy, contributing to his enduring legacy as both a tennis
+          icon and a global ambassador for the sport.
+          <img class="pic" src="images/icon2.webp" alt="yo" />
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="nadal">
+        <h1 class="nadalh"><u>Nadal</u></h1>
+        <p class="nadalp">
+          <img class="pic" src="images/icon1.jpg" alt="yo" />
+          Rafael Nadal, known as one of the fiercest competitors in tennis
+          history, is celebrated for his unmatched intensity, athleticism, and
+          resilience on the court. Renowned for his clay-court dominance, Nadal
+          has set records with 14 French Open titles, earning him the nickname
+          "King of Clay." His relentless playing style, featuring powerful
+          groundstrokes and incredible defense, has helped him secure 22 Grand
+          Slam titles, tying and surpassing records throughout his career. His
+          legendary rivalry with players like Roger Federer and Novak Djokovic
+          has defined an era of tennis, with Nadal's determination and
+          sportsmanship inspiring fans worldwide. Off the court, Nadal is
+          admired for his humility, kindness, and commitment to charitable
+          causes, including his work with the Rafa Nadal Foundation, which
+          supports disadvantaged youth. Through both his athletic achievements
+          and his dedication to making a positive impact, Nadal’s legacy
+          transcends tennis, solidifying him as an icon both on and off the
+          court.
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="djoko">
+        <h1 class="djokoh"><u>Djokovic</u></h1>
+        <p class="djokop">
+          Novak Djokovic, widely regarded as one of the most complete players in
+          tennis history, is celebrated for his mental toughness, athleticism,
+          and consistency. Known for his flexibility and defensive skills,
+          Djokovic has claimed a record-breaking 24 Grand Slam titles,
+          solidifying his place among the sport’s all-time greats. His fierce
+          rivalries with Roger Federer and Rafael Nadal have defined a golden
+          era in men’s tennis, with each match highlighting Djokovic's
+          resilience and focus. His precise baseline game and dominant returns
+          make him a formidable opponent on any surface, and he is one of the
+          few players to complete multiple career Grand Slams. Beyond his
+          achievements on the court, he’s admired for his discipline and
+          relentless pursuit of improvement, constantly pushing the limits of
+          what’s possible. Off the court, Djokovic’s commitment to philanthropy
+          through the Novak Djokovic Foundation, which supports early childhood
+          education, further enhances his legacy as a transformative figure in
+          tennis.
+          <img class="pic" src="images/icon3.jpg" alt="yo" />
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="andy">
+        <h1 class="andyh"><u>Murray</u></h1>
+        <p class="andyp">
+          <img class="pic" src="images/icon4.png" alt="yo" />
+          Andy Murray, known for his tenacity, grit, and tactical intelligence,
+          is celebrated as one of the most accomplished British tennis players
+          in history. With three Grand Slam titles, two Olympic gold medals, and
+          a historic Wimbledon victory in 2013 that ended Britain’s 77-year
+          drought, Murray’s career has inspired fans across the world. His
+          rivalries with Roger Federer, Rafael Nadal, and Novak Djokovic have
+          produced thrilling matches, with Murray often praised for his mental
+          resilience and defensive prowess. Despite facing career-threatening
+          injuries, his determination to return to competitive play has
+          solidified his reputation as one of the sport’s toughest competitors.
+          Off the court, Murray is known for his advocacy of gender equality,
+          frequently speaking out in support of women in sports and championing
+          equal prize money in tennis. His commitment to both his game and his
+          principles has made him not only a celebrated athlete but also a
+          respected voice and role model in the world of sports.
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <div class="wof">
+        <p class="wofp">
+          The Big Four aside, tennis has a storied history of legendary players
+          whose contributions have shaped the sport. Icons like Rod Laver and
+          Margaret Court set high standards in the 1960s and 70s, with Laver
+          achieving two calendar-year Grand Slams. Billie Jean King’s victory in
+          the “Battle of the Sexes” in 1973 not only showcased her skill but
+          also advanced the fight for gender equality in sports. Rivals like
+          Bjorn Borg, John McEnroe, and Chris Evert captivated fans with their
+          contrasting styles, while Serena Williams transformed the women’s game
+          with her powerful play and 23 Grand Slam titles.<br /><br /><br /><br /><br />
+          As we look to the future, a new generation of rising stars is
+          emerging. Players like Carlos Alcaraz and Emma Raducanu are making
+          headlines with their exceptional talent and poise on the court.
+          Alcaraz, with his explosive athleticism, has already claimed a Grand
+          Slam title at a young age, while Raducanu captured the tennis world’s
+          attention by winning the US Open as a qualifier. Other young talents,
+          such as Jannik Sinner and Coco Gauff, are also making waves,
+          showcasing the depth and promise of the sport’s future. As these
+          emerging stars take center stage, the legacy of tennis continues to
+          grow, promising exciting rivalries and memorable matches for years to
+          come.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h2 class="tableh">ATP Players Rankings <sup>2024</sup></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ranking</th>
+              <th>Name</th>
+              <th>Cups Won</th>
+              <th>Picture</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/jannik-sinner/s0ag/overview"
+                  target="_blank"
+                  >Jannikn Sinner</a
+                >
+              </td>
+              <td>17</td>
+              <td>
+                <img src="images/janik.png" alt="jannnik" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/carlos-alcaraz/a0e2/overview"
+                  target="_blank"
+                  >Carlos Alcaraz</a
+                >
+              </td>
+              <td>16</td>
+              <td><img src="images/carlos.png" alt="carlos" /></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/alexander-zverev/z355/overview"
+                  target="_blank"
+                  >Alexander Zverev</a
+                >
+              </td>
+              <td>22</td>
+              <td>
+                <img src="images/server.png" alt="alex" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/novak-djokovic/d643/overview"
+                  target="_blank"
+                  >Novak Djokovic</a
+                >
+              </td>
+              <td>99</td>
+              <td><img src="images/djoco.png" alt="Andy Murray" /></td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/daniil-medvedev/mm58/overview"
+                  target="_blank"
+                  >Danil Medvedev</a
+                >
+              </td>
+              <td>20</td>
+              <td><img src="images/danil.png" alt="Andy Murray" /></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/taylor-fritz/fb98/overview"
+                  target="_blank"
+                  >Taylor Fitz</a
+                >
+              </td>
+              <td>8</td>
+              <td><img src="images/taylor.png" alt="Andy Murray" /></td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/andrey-rublev/re44/overview"
+                  target="_blank"
+                  >Andrew Rublev</a
+                >
+              </td>
+              <td>16</td>
+              <td><img src="images/andrew.png" alt="Andy Murray" /></td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/casper-ruud/rh16/overview"
+                  target="_blank"
+                  >Casper Ruud</a
+                >
+              </td>
+              <td>12</td>
+              <td><img src="images/ruudd.png" alt="Andy Murray" /></td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/grigor-dimitrov/d875/overview"
+                  target="_blank"
+                  >Grigor Dimitrov</a
+                >
+              </td>
+              <td>9</td>
+              <td><img src="images/grigor.png" alt="Andy Murray" /></td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>
+                <a
+                  href="https://www.atptour.com/en/players/alex-de-minaur/dh58/overview"
+                  target="_blank"
+                  >Alex de Minaur</a
+                >
+              </td>
+              <td>9</td>
+              <td><img src="images/demenor.png" alt="Andy Murray" /></td>
+            </tr>
+            <!-- Add more players as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll to the top
+        });
+      };
+    </script>
+
+    <div class="footer">
+      <p>Made by Abhyudaya Agarwal<br />2024</p>
+    </div>
+  </body>
+</html>

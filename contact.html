@@ -1,0 +1,588 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/log.png" />
+    <link rel="stylesheet" type="text/css" href="stylecontact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Merriweather&family=Raleway&family=Oswald&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "ao";
+        src: url("fonts/Sharp Sans Semibold.otf");
+      }
+
+      @font-face {
+        font-family: "dream";
+        src: url("fonts/dream orphanage rg.otf");
+      }
+      @font-face {
+        font-family: "ptown";
+        src: url("fonts/HenriDiot.otf");
+      }
+      @font-face {
+        font-family: "gorg";
+        src: url("fonts/KIVEN.otf");
+      }
+      @font-face {
+        font-family: "clas";
+        src: url("fonts/RINGM___.TTF");
+      }
+
+      @font-face {
+        font-family: "rela";
+        src: url("fonts/Carrinady.otf");
+      }
+
+      #scrollToTopBtn {
+        position: fixed; /* Stay in place */
+        bottom: 20px; /* 20px from the bottom */
+        right: 30px; /* 30px from the right */
+        z-index: 99; /* Sit on top */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgba(255, 255, 255, 0.5); /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Pointer/hand icon */
+        padding: 15px; /* Some padding */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        align-items: center;
+        color: #755252;
+      }
+      body {
+        background: linear-gradient(115deg, #c7e1fc, #6be5ba);
+      }
+
+      .hero {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% 10vh;
+        background-attachment: fixed;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+
+      .hero-heading {
+        line-height: 1.5; /* Consistent line height */
+        margin-top: 10px;
+        top: 0; /* Specify the top position */
+        padding: 45px; /* Add some padding to make it look better */
+        text-align: center;
+        font-size: 54px;
+        color: #000000f1;
+        transition: font-family 0.05s ease;
+      }
+
+      .content {
+        text-align: center; /* Center align text */
+        padding-top: 100px;
+      }
+      .navbar {
+        font-family: "Times New Roman", Times, serif;
+        position: fixed; /* Make the navbar stay at the top even when scrolling */
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+      }
+
+      .logo {
+        margin-right: 20px;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .navbar-links {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-grow: 1;
+        font-family: "rela";
+      }
+
+      .navbar-links li {
+        margin: 0 20px;
+      }
+
+      .navbar-links a {
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+      }
+
+      .navbar-links a:hover {
+        transform: scale(1.2);
+        color: #666;
+      }
+
+      .contact-link {
+        margin-left: auto;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-family: "rela";
+      }
+
+      .contact-form {
+        max-width: 600px; /* Maximum width of the form */
+        margin: 0 auto; /* Center the form */
+        padding: 20px; /* Padding around the form */
+        background-color: rgba(255, 255, 255, 0.8); /* Background color */
+        border-radius: 1px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        font-family: "rela";
+      }
+
+      .form-group {
+        margin-bottom: 15px; /* Space between form groups */
+        font-family: "rela";
+      }
+
+      .form-group label {
+        display: block; /* Make labels block elements */
+        margin-bottom: 5px; /* Space between label and input */
+        font-family: "rela";
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%; /* Full width */
+        padding: 10px; /* Padding inside inputs */
+        border: 1px solid #ccc; /* Border style */
+        border-radius: 1px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+      }
+
+      .form-buttons {
+        display: flex; /* Flexbox for buttons */
+        justify-content: space-between; /* Space between buttons */
+        font-family: "rela";
+      }
+
+      button {
+        padding: 10px 15px; /* Padding for the button */
+        background-color: #c17070; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        font-family: "rela";
+      }
+
+      .intro {
+        font-size: 27px;
+        color: #000000f1;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        font-family: "rela";
+      }
+      .sources {
+        font-size: 27px;
+        color: #000000f1;
+        font-family: "rela";
+      }
+      .sourcesh {
+        font-size: 36px;
+        color: #000000f1;
+        font-family: "rela";
+        text-align: left;
+      }
+      a {
+        text-decoration: none; /* Remove underline from links */
+        color: #0054ad; /* Default link color */
+        transition: color 0.3s; /* Smooth transition for color change */
+      }
+      a:hover {
+        color: #ff2f00; /* Change color on hover */
+      }
+    </style>
+  </head>
+  <body link="#0054ad">
+    <a id="top"></a>
+
+    <!-- Navbar Container -->
+    <div class="content">
+      <nav class="navbar" id="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="main.html"><img src="images/log.png" alt="error" /></a>
+        </div>
+        <!-- Navbar Links -->
+        <ul class="navbar-links">
+          <li class="history-link"><a href="history.html">History</a></li>
+
+          <li class="players-link"><a href="icons.html">Icons</a></li>
+          <li class="cno-link"><a href="cupno.html">Grand Slams</a></li>
+          <li class="contact-link"><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-heading">
+        <h1 class="hero-heading">Contact Me!</h1>
+      </div>
+    </div>
+    <script>
+      // Array of fonts to switch between
+      const fonts = [
+        "Arial, sans-serif",
+        "Courier New, monospace",
+        "Georgia, serif",
+        "Times New Roman, serif",
+        "Verdana, sans-serif",
+        "Trebuchet MS, sans-serif",
+        "Comic Sans MS, cursive",
+        "Impact, sans-serif",
+        "Lucida Console, monospace",
+        "Palatino Linotype, serif",
+        "Tahoma, sans-serif",
+        "Segoe UI, sans-serif",
+        "Arial Black, sans-serif",
+        "Garamond, serif",
+        "Helvetica, sans-serif",
+        "Futura, sans-serif",
+        "Playfair Display, serif", // Elegant serif
+        "Roboto, sans-serif", // Google Font
+        "Open Sans, sans-serif", // Google Font
+        "Lato, sans-serif", // Google Font
+        "Montserrat, sans-serif", // Google Font
+        "Merriweather, serif", // Google Font
+        "Raleway, sans-serif", // Google Font
+        "Oswald, sans-serif", // Google Font
+        "Poppins, sans-serif", // Google Font
+        "Source Sans Pro, sans-serif", // Google Font
+        "Nunito, sans-serif", // Google Font
+        "Quicksand, sans-serif", // Google Font
+        "Zilla Slab, serif", // Google Font
+        "Roboto Slab, serif", // Google Font
+        "Work Sans, sans-serif", // Google Font
+        "Cardo, serif", // Google Font
+        "Pacifico, cursive", // Google Font
+        "Cinzel, serif", // Google Font
+        "Amatic SC, cursive", // Google Font
+        "Alfa Slab One, serif", // Google Font
+        "Anton, sans-serif", // Google Font
+        "Fjalla One, sans-serif", // Google Font
+        "Karla, sans-serif", // Google Font
+        "Varela Round, sans-serif", // Google Font
+        "Roboto Mono, monospace", // Monospace font
+        "Italiana, serif", // Elegant italic font
+        "Libre Baskerville, serif", // Classic serif with italic option
+        "Raleway Dots, cursive", // Fun dotted font
+        "Sacramento, cursive", // Elegant script font
+      ];
+
+      // Select the element
+      const fontSwitcherElement = document.querySelector(".hero-heading");
+
+      // Initialize a counter
+      let currentFontIndex = 0;
+
+      // Function to switch fonts
+      function switchFont() {
+        // Update the font-family of the element
+        fontSwitcherElement.style.fontFamily = fonts[currentFontIndex];
+
+        // Randomly decide to italicize or not
+        const isItalic = Math.random() < 0.5; // 50% chance to italicize
+        fontSwitcherElement.style.fontStyle = isItalic ? "italic" : "normal";
+
+        // Update the index to the next font
+        currentFontIndex = (currentFontIndex + 1) % fonts.length; // Loop back to the start
+      }
+
+      // Set the interval to switch fonts every second (1000 milliseconds)
+      setInterval(switchFont, 110);
+    </script>
+
+    <div class="contact">
+      <p class="intro">
+        Got some feedback?<br />
+        A job offer perhaps?<br />
+        Or just want to say hi?<br />
+        I'd love to hear from you!<br />
+        Fill up the form!
+      </p>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="firstName"><b>First Name:</b></label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName"><b>Last Name:</b></label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email"><b>Email:</b></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <b>Subscribe to newsletter</b>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="country"><b>Country:</b></label>
+          <select id="country" name="country" required>
+            <option value="">#</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <!-- Add more countries as needed -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label><b>Gender:</b></label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              required
+            />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message"><b>Message:</b></label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit"><b>Submit</b></button>
+          <button type="reset"><b>Reset</b></button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="sources">
+      <h1 class="sourcesh">Sources</h1>
+      <ol type="I">
+        <li class="alt1">
+          <a href="history.html">History</a>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=t8eEfjxDeHM&t=118s"
+                >The Movie</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/search?q=tennis+old+pics+ancient&sca_esv=95f1df8d90c72a70&udm=2&cs=1&hl=en&biw=1440&bih=784&sxsrf=ADLYWIL9PtK6fkw7uaoOJjVy1SfsTAeLEw%3A1730623461161&ei=5TcnZ8DDCa-84-EP5JfVqA0&ved=0ahUKEwiAypHl4r-JAxUv3jgGHeRLFdUQ4dUDCBA&uact=5&oq=tennis+old+pics+ancient&gs_lp=EgNpbWciF3Rlbm5pcyBvbGQgcGljcyBhbmNpZW50SMYWUKcIWKoVcAF4AJABAJgBdqAB2geqAQMwLjm4AQPIAQD4AQGYAgKgAuMBwgIEECMYJ8ICBhAAGAgYHpgDAIgGAZIHAzAuMqAHjwU&sclient=img"
+                >Images</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/search?sca_esv=95f1df8d90c72a70&sxsrf=ADLYWIKk-OITD1djBdxbHelCFdD2bzwu_w:1730618593971&q=wimbledon+vintage+tennis+tennis+old+pics&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7dnYEmir32V9d3fnRHFuePBziO5cN9FPAjtI_9BQmJJvS_CrKagMk5g1RfFeHxP6qt0xm3wl32lHWvx7ckIxyeUEdNMiqRaIyWOASb6ryvwGrofo0kIxvgjoHZAp6Tzb_WW3JbPtRsKt3C9rAa26FeY47z_GM&udm=2&sa=X&ved=2ahUKEwi77qPU0L-JAxX34jgGHZ53Am0QxKsJegUIjwEQAQ&ictx=0&biw=1440&bih=784&dpr=2"
+                >More Images</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="alt2">
+          <a href="icons.html">Icons</a>
+          <ul>
+            <li>
+              <a href="https://www.atptour.com/en/rankings/singles"
+                >ATP Rankings
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tallengestore.com/products/roger-federer-tennis-goat-graphic-art-poster-framed-prints"
+                >Poster 1</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://posterkraze.net/poster/rafael-nadal-tennis-poster/"
+                >Poster 2</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://posterkraze.net/poster/novak-djokovic-tennis-poster/"
+                >Poster 3</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.etsy.com/in-en/listing/1552851784/andy-murray-poster-tennis-print-tennis?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=andy+murray+gift&ref=sr_gallery-1-2&pro=1&frs=1&content_source=9e6e2b97251c05369b6a46588062059dc6004fec%253A1552851784&organic_search_click=1"
+                >Poster 4</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="alt1">
+          <a href="cupno.html">Grand Slams</a>
+          <ul>
+            <li>
+              <a
+                href="https://uk.pinterest.com/pin/australian-open-print-tennis-australia-poster-canvas-rod-laver-arena-artwork-picture-home-deco-retro-art-print-travel-vintage-wall-affiche-etsy-uk--815573813918686815/"
+                >Poster 1</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tennisgallerywimbledon.com/products/2024-australian-open-official-programme"
+                >Poster 2</a
+              >
+            </li>
+            <li>
+              <a href="https://store.rolandgarros.com/">Poster 3</a>
+            </li>
+            <li>
+              <a href="https://store.rolandgarros.com/">Poster 4</a>
+            </li>
+            <li>
+              <a
+                href="https://tennisgallerywimbledon.com/collections/wimbledon-posters"
+                >Poster 5</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tennisgallerywimbledon.com/collections/wimbledon-posters"
+                >Poster 6</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://leewybranski.com/product-category/golf-merchandise/"
+                >Poster 7</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://leewybranski.com/product-category/golf-merchandise/"
+                >Poster 8</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=9nafTPUS-n8&pp=ygUTcm9sYW5kIGdhcnJvcyBtdXNpYw%3D%3D"
+                >Roland Garros Theme Music</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="alt2">
+          <a href="contact.html">Contact Me</a>
+          <ul>
+            <li><a href="https://github.com/Abhyudaya10">My Github</a></li>
+            <li>
+              <a href="mailto:abhixbox10@gmail.com?subject=##" target="_blank">
+                Gmail</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/abhyudaya-agarwal-a95878296/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll to the top
+        });
+      };
+    </script>
+
+    <div class="footer">
+      <p>Made by Abhyudaya Agarwal<br />2024</p>
+    </div>
+  </body>
+</html>

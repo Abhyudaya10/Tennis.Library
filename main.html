@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/log.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Merriweather&family=Raleway&family=Oswald&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a id="top"></a>
+    
+
+  
+    <!-- Navbar Container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="main.html"><img src='images/log.png' alt="error" /></a>
+      </div>
+      <!-- Navbar Links -->
+      <ul class="navbar-links">
+        <li class="history-link"><a href="history.html">History</a></li>
+        
+        <li class="players-link"><a href="icons.html">Icons</a></li>
+        <li class="cno-link"><a href="cupno.html">Grand Slams</a></li>
+        <li class="contact-link"><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-heading">
+        <h1 class="hero-heading">Tennis.</h1>
+      </div>
+    </div>
+    <script>
+      
+      // Array of fonts to switch between
+      const fonts = [
+      'Arial, sans-serif',
+            'Courier New, monospace',
+            'Georgia, serif',
+            'Times New Roman, serif',
+            'Verdana, sans-serif',
+            'Trebuchet MS, sans-serif',
+            'Comic Sans MS, cursive',
+            'Impact, sans-serif',
+            'Lucida Console, monospace',
+            'Palatino Linotype, serif',
+            'Tahoma, sans-serif',
+            'Segoe UI, sans-serif',
+            'Arial Black, sans-serif',
+            'Garamond, serif',
+            'Helvetica, sans-serif',
+            'Futura, sans-serif',
+            'Playfair Display, serif', // Elegant serif
+            'Roboto, sans-serif', // Google Font
+            'Open Sans, sans-serif', // Google Font
+            'Lato, sans-serif', // Google Font
+            'Montserrat, sans-serif', // Google Font
+            'Merriweather, serif', // Google Font
+            'Raleway, sans-serif', // Google Font
+            'Oswald, sans-serif', // Google Font
+            'Poppins, sans-serif', // Google Font
+            'Source Sans Pro, sans-serif', // Google Font
+            'Nunito, sans-serif', // Google Font
+            'Quicksand, sans-serif', // Google Font
+            'Zilla Slab, serif', // Google Font
+            'Roboto Slab, serif', // Google Font
+            'Work Sans, sans-serif', // Google Font
+            'Cardo, serif', // Google Font
+            'Pacifico, cursive', // Google Font
+            'Cinzel, serif', // Google Font
+            'Amatic SC, cursive', // Google Font
+            'Alfa Slab One, serif', // Google Font
+            'Anton, sans-serif', // Google Font
+            'Fjalla One, sans-serif', // Google Font
+            'Karla, sans-serif', // Google Font
+            'Varela Round, sans-serif', // Google Font
+            'Roboto Mono, monospace', // Monospace font
+            'Italiana, serif', // Elegant italic font
+            'Libre Baskerville, serif', // Classic serif with italic option
+            'Raleway Dots, cursive', // Fun dotted font
+            'Sacramento, cursive' // Elegant script font
+          
+      ];
+
+      // Select the element
+      const fontSwitcherElement = document.querySelector('.hero-heading');
+
+      // Initialize a counter
+      let currentFontIndex = 0;
+
+      // Function to switch fonts
+      function switchFont() {
+          // Update the font-family of the element
+          fontSwitcherElement.style.fontFamily = fonts[currentFontIndex];
+
+          // Randomly decide to italicize or not
+          const isItalic = Math.random() < 0.5; // 50% chance to italicize
+            fontSwitcherElement.style.fontStyle = isItalic ? 'italic' : 'normal';
+
+           
+
+          // Update the index to the next font
+          currentFontIndex = (currentFontIndex + 1) % fonts.length; // Loop back to the start
+      }
+
+      // Set the interval to switch fonts every second (1000 milliseconds)
+      setInterval(switchFont, 110);
+  </script>
+
+
+    <!-- Main Content Container -->
+    <div class="main-content">
+      <!-- Add your main content here -->
+      <div class="s1">
+        <img src='images/hispic6.jpg' class="poster1" alt="na" />
+        <img src='images/history.jpg' class="poster1" alt="na" />
+        <h1 class  = "ttl1"> History</h1>
+        <p class="tp1">
+          Tennis has a rich history dating back to the late 12th century in France, where monks played by striking a ball against a wall with their hands. By the 16th century, the game evolved into "real tennis," played indoors with rackets and structured rules. The modern version of tennis began in the late 19th century in England, with standardized rules and grass courts. In 1873, Major Walter Clopton Wingfield patented a game called "Sphairistikè," laying the groundwork for lawn tennis, and the first Wimbledon Championships were held in 1877. Since then, tennis has grown globally, with major tournaments like the US Open, French Open, and Australian Open becoming key events. The Open Era, introduced in 1968, allowed both amateur and professional players to compete for the same titles, boosting the sport's popularity. Technological innovations, such as advanced racket designs and electronic line-calling, have transformed the game, while initiatives promoting gender equality have increased its social impact. Today, tennis is celebrated worldwide for its athleticism, tradition, and cultural significance, drawing millions of fans to major tournaments and preserving its rich legacy.
+          
+          
+        </p>
+
+        </p>
+      </div>
+
+
+      <div class="s3">
+        <img src='images/icon2.webp' class="poster1" alt="na" />
+        <img src='images/icon1.jpg' class="poster1" alt="na" />
+        <h1 class = "ttl3">Icons</h1>
+        <p class="tp3">
+          Tennis has produced numerous iconic figures who have left an indelible mark on the sport and beyond. Serena Williams is a standout, celebrated not only for her powerful play and remarkable record of 23 Grand Slam titles but also for her advocacy in gender equality and social justice, inspiring countless young athletes around the world. Roger Federer, known for his grace on and off the court, has redefined the game with his unparalleled skill and sportsmanship, earning admiration from fans and fellow players alike. Rafael Nadal, with his relentless determination and unparalleled success on clay courts, is revered for his competitive spirit and humility, showcasing what it means to be a true champion. Billie Jean King, a pioneer for women's sports, played a pivotal role in advocating for equal pay and opportunities, significantly elevating the profile of women's tennis. Other notable icons include Martina Navratilova, who broke barriers in both performance and advocacy for LGBTQ+ rights, and Andre Agassi, known for his charismatic personality and impactful philanthropic efforts. Each of these icons has contributed to the sport’s legacy, inspiring generations of players and fans while pushing the boundaries of excellence and advocacy within the game. Their influence extends beyond tennis, making them cultural icons and advocates for change.
+        </p>
+      </div>
+      <div class="s4">
+        <img src='images/cup1.jpg' class="poster2" alt="na" />
+        <img src='images/cup2.png_large' class="poster2" alt="na" />
+        <h1 class = "ttl4">Cups & Opens</h1>
+        <p class="tp4">
+          Tennis cups and opens are prestigious events that showcase the
+          pinnacle of competitive play, drawing participants and fans from
+          around the globe. Grand Slam tournaments—Wimbledon, the US Open, the
+          French Open, and the Australian Open—stand as the crown jewels of the
+          sport, each offering a unique atmosphere and history. Wimbledon, with
+          its grass courts and tradition, embodies elegance, while the French
+          Open’s red clay tests endurance and strategy. The US Open is known for
+          its vibrant energy, and the Australian Open kick-starts the tennis
+          calendar with enthusiasm. Beyond the Grand Slams, events like the
+          Davis Cup and Fed Cup foster national pride, creating thrilling team
+          competitions that highlight the sport’s spirit of unity and rivalry.
+          Each tournament contributes to the rich narrative of tennis,
+          celebrating excellence and the pursuit of greatness.
+        </p>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <script>
+
+      // Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+scrollToTopBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scroll to the top
+    });
+};
+    </script>
+
+
+<section class="footer">
+  <div class="flex-container_foot">
+     <div class="flex-box_foot">
+        
+        <div class="flex-container_foot2">
+           <div class="flex-box_foot2">
+           Made By Abhyudaya Agarwal <br>
+           2024
+     </div>
+     </div>
+  
+  </section>
+  
+  </body>
+</html>

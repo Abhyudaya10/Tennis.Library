@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "ao";
+  src: url("fonts/Sharp Sans Semibold.otf");
+}
+
+@font-face {
+  font-family: "dream";
+  src: url("fonts/dream orphanage rg.otf");
+}
+@font-face {
+  font-family: "ptown";
+  src: url("fonts/HenriDiot.otf");
+}
+@font-face {
+  font-family: "gorg";
+  src: url("fonts/KIVEN.otf");
+}
+@font-face {
+  font-family: "clas";
+  src: url("fonts/RINGM___.TTF");
+}
+@font-face {
+  font-family: "rela";
+  src: url("fonts/Carrinady.otf");
+}
+
+#scrollToTopBtn {
+  position: fixed; /* Stay in place */
+  bottom: 20px; /* 20px from the bottom */
+  right: 30px; /* 30px from the right */
+  z-index: 99; /* Sit on top */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(255, 255, 255, 0.5); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer/hand icon */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  align-items: center;
+  color: #755252;
+  font-family: "clas";
+}
+body {
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #a6ffe9; /* Light background color */
+  padding-top: 50px;
+}
+
+.hp1 {
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 200px;
+  padding-bottom: 55px;
+  font-family: "clas";
+  font-size: 54px;
+}
+.p1 {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  font-size: 18px;
+  font-family: "clas";
+}
+
+.hp2 {
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 200px;
+  padding-bottom: 55px;
+  font-family: "clas";
+  font-size: 54px;
+}
+.p2 {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-family: "clas";
+}
+.hp3 {
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 200px;
+  padding-bottom: 55px;
+  font-family: "clas";
+  font-size: 54px;
+}
+.p3 {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  font-size: 18px;
+  font-family: "clas";
+}
+.hp4 {
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 200px;
+  padding-bottom: 55px;
+  font-family: "clas";
+  font-size: 54px;
+}
+.p4 {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  font-size: 18px;
+  font-family: "clas";
+}
+
+.imgcon {
+  text-align: center;
+}
+
+.pic {
+  align-items: center;
+  width: 500px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  max-width: 100%;
+}
+
+.imgconx {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.picx {
+  align-items: center;
+  width: 500px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  max-width: 100%;
+}
+video {
+  width: 90%; /* Make the iframe take full width of the container */
+  height: 700px; /* Set a fixed height for the video */
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  padding-top: 4800px;
+  padding-bottom: 300px;
+}
+
+.hero-heading {
+  line-height: 1.5; /* Consistent line height */
+  margin-top: 390px;
+  top: 0; /* Specify the top position */
+  padding: 45px; /* Add some padding to make it look better */
+  text-align: center;
+  font-size: 70px;
+  color: #000000f1;
+  transition: font-family 0.05s ease;
+}
+.hero-heading video {
+  padding: 80px;
+  margin-bottom: 10px; /* Space between video and content */
+  display: flex; /* Use flexbox to center the iframe */
+  justify-content: center; /* Center align the iframe */
+  /* Set width of the video container */
+  max-width: 1400px; /* Maximum width of the video */
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.content {
+  text-align: center; /* Center align text */
+  padding-top: 100px;
+}
+.navbar {
+  font-family: "Times New Roman", Times, serif;
+  position: fixed; /* Make the navbar stay at the top even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: "clas";
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+  transform: scale(1.2);
+  color: #666;
+}
+
+.contact-link {
+  margin-left: auto;
+  text-decoration: none;
+  color: #333;
+}

@@ -1,0 +1,285 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis Times</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/log.png" />
+    <link rel="stylesheet" type="text/css" href="stylehistory.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Merriweather&family=Raleway&family=Oswald&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <!-- Navbar Container -->
+    <div class="content">
+      <nav class="navbar" id="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="main.html"><img src="images/log.png" alt="error" /></a>
+        </div>
+        <!-- Navbar Links -->
+        <ul class="navbar-links">
+          <li class="history-link"><a href="history.html">History</a></li>
+
+          <li class="players-link"><a href="icons.html">Icons</a></li>
+          <li class="cno-link"><a href="cupno.html">Grand Slams</a></li>
+          <li class="contact-link"><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-heading">
+        <h1 class="hero-heading">Tennis Times</h1>
+        <video controls autoplay loop poster="images/stock.jpg">
+          <source src="images/Tennis Greats.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <script>
+      // Array of fonts to switch between
+      const fonts = [
+        "Arial, sans-serif",
+        "Courier New, monospace",
+        "Georgia, serif",
+        "Times New Roman, serif",
+        "Verdana, sans-serif",
+        "Trebuchet MS, sans-serif",
+        "Comic Sans MS, cursive",
+        "Impact, sans-serif",
+        "Lucida Console, monospace",
+        "Palatino Linotype, serif",
+        "Tahoma, sans-serif",
+        "Segoe UI, sans-serif",
+        "Arial Black, sans-serif",
+        "Garamond, serif",
+        "Helvetica, sans-serif",
+        "Futura, sans-serif",
+        "Playfair Display, serif", // Elegant serif
+        "Roboto, sans-serif", // Google Font
+        "Open Sans, sans-serif", // Google Font
+        "Lato, sans-serif", // Google Font
+        "Montserrat, sans-serif", // Google Font
+        "Merriweather, serif", // Google Font
+        "Raleway, sans-serif", // Google Font
+        "Oswald, sans-serif", // Google Font
+        "Poppins, sans-serif", // Google Font
+        "Source Sans Pro, sans-serif", // Google Font
+        "Nunito, sans-serif", // Google Font
+        "Quicksand, sans-serif", // Google Font
+        "Zilla Slab, serif", // Google Font
+        "Roboto Slab, serif", // Google Font
+        "Work Sans, sans-serif", // Google Font
+        "Cardo, serif", // Google Font
+        "Pacifico, cursive", // Google Font
+        "Cinzel, serif", // Google Font
+        "Amatic SC, cursive", // Google Font
+        "Alfa Slab One, serif", // Google Font
+        "Anton, sans-serif", // Google Font
+        "Fjalla One, sans-serif", // Google Font
+        "Karla, sans-serif", // Google Font
+        "Varela Round, sans-serif", // Google Font
+        "Roboto Mono, monospace", // Monospace font
+        "Italiana, serif", // Elegant italic font
+        "Libre Baskerville, serif", // Classic serif with italic option
+        "Raleway Dots, cursive", // Fun dotted font
+        "Sacramento, cursive", // Elegant script font
+      ];
+
+      // Select the element
+      const fontSwitcherElement = document.querySelector(".hero-heading");
+
+      // Initialize a counter
+      let currentFontIndex = 0;
+
+      // Function to switch fonts
+      function switchFont() {
+        // Update the font-family of the element
+        fontSwitcherElement.style.fontFamily = fonts[currentFontIndex];
+
+        // Randomly decide to italicize or not
+        const isItalic = Math.random() < 0.5; // 50% chance to italicize
+        fontSwitcherElement.style.fontStyle = isItalic ? "italic" : "normal";
+
+        // Update the index to the next font
+        currentFontIndex = (currentFontIndex + 1) % fonts.length; // Loop back to the start
+      }
+
+      // Set the interval to switch fonts every second (1000 milliseconds)
+      setInterval(switchFont, 110);
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="hispara">
+      <h1 class="hp1">Origins & Early Beginnings</h1>
+      <p class="p1">
+        The game of tennis has a long history, with roots reaching back to
+        ancient civilizations. Although the exact origins are difficult to
+        trace, it is widely believed that games involving balls and hitting
+        motions were popular in ancient Egypt, Greece, and Rome. These early
+        games shared basic concepts with tennis but were far less structured.
+        The version most similar to modern tennis took shape in medieval France
+        with a game called Jeu de Paume, or “game of the palm,” which emerged
+        around the 12th century. In Jeu de Paume, players initially struck the
+        ball with their hands, but as the game progressed, they began to use
+        leather gloves and paddles to improve control. Eventually, these paddles
+        evolved into the first rackets, setting the foundation for a more
+        sophisticated sport. By the 16th century, Jeu de Paume had transformed
+        into "real tennis," which introduced enclosed courts, specialized rules,
+        and scoring terms that remain in modern tennis, such as “love” and
+        “deuce.” Real tennis grew in popularity among European nobility,
+        particularly in England and France. In fact, King Henry VIII of England
+        was an avid player and championed the game, helping to establish it as a
+        royal pastime. Despite its popularity, real tennis remained largely an
+        exclusive sport, limited to the aristocracy and played primarily in
+        indoor courts. This version of the game laid down principles and scoring
+        systems that would significantly influence the modern game of lawn
+        tennis.
+      </p>
+      <div class="imgcon">
+        <img class="pic" align="center" src="images/hispic.jpg" alt="" />
+        <img class="pic" align="center" src="images/hispic10.jpg" alt="" />
+      </div>
+
+      <h1 class="hp2">The Birth of Mordern Tennis</h1>
+      <p class="p2">
+        Modern tennis, often referred to as lawn tennis, was officially born in
+        the 19th century and was popularized through the efforts of Major Walter
+        Clopton Wingfield. In 1873, Wingfield created a game called
+        “Sphairistikè” (Greek for “ball-playing”) and developed a version that
+        could be played on a grass surface, which was more accessible and suited
+        for outdoor play. This new adaptation took elements from real tennis but
+        modified them to create a simpler, more recreational activity that could
+        be enjoyed by the public. Lawn tennis rapidly gained popularity in
+        Victorian Britain, where it appealed to both men and women as an
+        elegant, social sport. In 1877, the All England Club, based in
+        Wimbledon, codified a standardized set of rules and dimensions for the
+        court and net, which they used for the first official Wimbledon
+        Championship. This tournament, initially featuring only men’s singles,
+        marked the birth of competitive modern tennis. As Wimbledon grew in
+        prestige, other championships emerged, and lawn tennis started to take
+        shape as an international sport. By the late 19th century, additional
+        events, such as doubles matches and women’s competitions, were
+        introduced, further expanding the sport’s reach and appeal. Lawn tennis
+        thus evolved from a leisure activity into an organized competitive sport
+        with established rules, which were soon adopted worldwide.
+      </p>
+
+      <div class="imgcon">
+        <img class="pic" align="center" src="images/hispic8.jpg" alt="" />
+        <img class="pic" align="center" src="images/hispic11.jpg" alt="" />
+      </div>
+
+      <h1 class="hp3">Expansion & Globalization</h1>
+      <p class="p3">
+        The popularity of tennis quickly spread beyond Britain to countries
+        across Europe and North America. During the late 19th and early 20th
+        centuries, tennis clubs began to emerge in these regions, and the sport
+        became accessible to a broader range of social classes and communities.
+        Unlike real tennis, which had been largely confined to royalty and
+        aristocrats, lawn tennis found enthusiastic support from middle and
+        working-class people, making it a truly international game. The founding
+        of the International Lawn Tennis Federation (ILTF) in 1913, with
+        representatives from 12 nations, marked a major milestone in tennis
+        history. The ILTF was established to promote the sport globally,
+        ensuring consistency in rules and standards across borders. This
+        organization also played a crucial role in formalizing the Grand Slam
+        tournaments. Wimbledon (established in 1877), the US Open (1881), the
+        French Open (1891), and the Australian Open (1905) were already
+        prominent tournaments, but they were united under the Grand Slam label
+        in the 1920s, making them the pinnacle of competitive tennis. Each Grand
+        Slam offered unique challenges due to differences in court surfaces:
+        grass at Wimbledon, clay at the French Open, and hard courts at the US
+        Open and Australian Open. These surface variations brought out diverse
+        playing styles and strategies, adding layers of skill and versatility to
+        the game. By the mid-20th century, tennis had become one of the world’s
+        most widely played sports, with millions of recreational and competitive
+        players, as well as growing media coverage of tournaments.
+      </p>
+
+      <div class="imgcon">
+        <img class="pic" align="center" src="images/hispic5.jpg" alt="" />
+        <img class="pic" align="center" src="images/hispic4.jpg" alt="" />
+      </div>
+
+      <h1 class="hp4">The Open Era</h1>
+      <p class="p4">
+        The year 1968 marked a transformative period in tennis history, ushering
+        in what is known as the Open Era. Before this time, tennis tournaments
+        were divided into separate amateur and professional circuits, which
+        limited competition and created a distinct hierarchy in the sport. With
+        the advent of the Open Era, professional players were allowed to compete
+        alongside amateurs in all tournaments, including the prestigious Grand
+        Slams. This decision immediately increased the level of competition and
+        attracted a larger, more diverse group of players. It also allowed
+        tournaments to offer substantial prize money, paving the way for tennis
+        to become a lucrative career path. The Open Era coincided with the rise
+        of television broadcasting, which played a major role in making tennis a
+        global spectacle. Stars such as Billie Jean King, Rod Laver, Bjorn Borg,
+        Martina Navratilova, and Arthur Ashe became household names, and their
+        rivalries captivated audiences around the world. Technological
+        advancements also contributed to the sport's evolution. Racket materials
+        shifted from wood to aluminum, and then to lighter, more durable
+        graphite, allowing players to hit with more power and precision. Changes
+        in strategy, particularly the shift from serve-and-volley tactics to
+        baseline-focused play, added complexity to the game. Sponsorships,
+        endorsements, and branding transformed the professional circuit, making
+        it more financially rewarding for players and raising the sport’s
+        profile as a high-stakes international competition. The Open Era not
+        only democratized tennis but also solidified it as one of the world’s
+        most celebrated sports.
+      </p>
+
+      <div class="imgconx">
+        <img class="picx" align="center" src="images/hispic12.jpg" alt="" />
+        <img class="picx" align="center" src="images/hispic9.jpg" alt="" />
+        <img class="picx" align="center" src="images/hispicx.webp" alt="" />
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll to the top
+        });
+      };
+    </script>
+
+    <div class="footer">
+      <p>Made by Abhyudaya Agarwal<br />2024</p>
+    </div>
+  </body>
+</html>

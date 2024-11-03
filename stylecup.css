@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "ao";
+  src: url("fonts/Sharp Sans Semibold.otf");
+}
+
+@font-face {
+  font-family: "dream";
+  src: url("fonts/dream orphanage rg.otf");
+}
+@font-face {
+  font-family: "ptown";
+  src: url("fonts/HenriDiot.otf");
+}
+@font-face {
+  font-family: "gorg";
+  src: url("fonts/KIVEN.otf");
+}
+@font-face {
+  font-family: "clas";
+  src: url("fonts/RINGM___.TTF");
+}
+
+@font-face {
+  font-family: "rela";
+  src: url("fonts/Carrinady.otf");
+}
+
+#scrollToTopBtn {
+  position: fixed; /* Stay in place */
+  bottom: 20px; /* 20px from the bottom */
+  right: 30px; /* 30px from the right */
+  z-index: 99; /* Sit on top */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(255, 255, 255, 0.5); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer/hand icon */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  align-items: center;
+  color: #755252;
+  font-family: "rela";
+}
+body {
+  background: linear-gradient(115deg, #daf8ff, #8fb8ff);
+}
+.hero {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 10vh;
+  background-attachment: fixed;
+  padding-top: 38px;
+  padding-bottom: 300px;
+}
+
+.hero-heading {
+  line-height: 1.5; /* Consistent line height */
+  margin-top: 100px;
+  top: 0; /* Specify the top position */
+  padding: 45px; /* Add some padding to make it look better */
+  text-align: center;
+  font-size: 70px;
+  color: #000000f1;
+  transition: font-family 0.05s ease;
+}
+
+.content {
+  text-align: center; /* Center align text */
+  padding-top: 100px;
+}
+.navbar {
+  font-family: "Times New Roman", Times, serif;
+  position: fixed; /* Make the navbar stay at the top even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: "rela";
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+  transform: scale(1.2);
+  color: #666;
+}
+
+.contact-link {
+  margin-left: auto;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.introp {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ip {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ao {
+  background-color: rgb(80, 203, 255);
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+}
+.aoh {
+  text-align: center;
+  font-family: "rela";
+  font-size: 43px;
+}
+
+.aop {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.rol {
+  background-color: rgb(255, 103, 103);
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+}
+.rolh {
+  text-align: center;
+  font-family: "rela";
+  font-size: 43px;
+}
+
+.rolp {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wim {
+  background-color: rgb(115, 255, 119);
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+}
+.wimh {
+  text-align: center;
+  font-family: "rela";
+  font-size: 43px;
+}
+
+.wimp {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.us {
+  background-color: rgb(88, 121, 218);
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+}
+.ush {
+  text-align: center;
+  font-family: "rela";
+  font-size: 43px;
+}
+
+.usp {
+  padding-top: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 45px;
+  font-size: 33px;
+  font-family: "rela";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.pic {
+  width: 350px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  margin: 10px; /* Add some space between images */
+  margin-top: 0px;
+  margin-right: 30;
+  margin-left: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  max-width: 100%;
+}
+
+.titlepicao {
+  width: 250px; /* Set the desired width */
+  height: 150px;
+}
+
+.titlepicrol {
+  width: 349px; /* Set the desired width */
+  height: 193px;
+}
+.titlepicwim {
+  width: 220px; /* Set the desired width */
+  height: 210px;
+}
+.titlepicus {
+  width: 220px; /* Set the desired width */
+  height: 160px;
+}
+
+.music {
+  text-align: center;
+}
+
+.flex-container_foot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-family: "VCR", serif;
+}
+
+.flex-box_foot {
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background: rgb(88, 121, 218);
+  color: rgb(179, 162, 162);
+  font-size: 20px;
+  font-family: "VCR", serif;
+  line-height: 50px;
+}
+
+.flex-container_foot2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "dream";
+}
+
+.flex-box_foot2 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 20%;
+  height: 100px;
+  background: transparent;
+  color: rgb(0, 43, 57);
+  font-size: 20px;
+  font-family: "rela";
+  line-height: 20px;
+}
